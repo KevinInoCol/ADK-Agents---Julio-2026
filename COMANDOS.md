@@ -14,8 +14,8 @@ brew upgrade --cask google-cloud-sdk
 # Primer paso: Para el SDK de Google
 - gcloud init
 
-# Segundo paso: Deploy en Google Cloud Run
-gcloud auth login
+# Segundo paso: Permisos para utilizar los diferentes servicios de Google.
+- gcloud auth login
 
 # Tercer paso: Obtengo una clave JSON de una cuenta de servicio temporal con el Google Auth Library
 - gcloud auth application-default login
@@ -27,10 +27,14 @@ Ejemplo: conda activate ADK-Agents
 # ================= Instalamos Google ADK ====================
 pip install google-adk
 
+# ========= Laboratorio de ADK ========
+adk web
 
 
+
+# =========== Despliegue sobre GCR ========
 adk deploy cloud_run \
---project=datapath-kevin-inofuente \
+--project=datapath-kevin-inofuentecolque \
 --region=us-central1 \
 --service_name=project-conexion-big-query-adk-service \
 --app_name=project_conexion_big_query_adk_app \

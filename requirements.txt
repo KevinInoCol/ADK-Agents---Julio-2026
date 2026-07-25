@@ -11,3 +11,5 @@ sqlalchemy
 sqlalchemy-bigquery
 tabulate
 streamlit
+tavily-python
+pyyaml

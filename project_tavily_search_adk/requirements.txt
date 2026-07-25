@@ -1,0 +1,3 @@
+google-adk
+tavily-python
+pyyaml
