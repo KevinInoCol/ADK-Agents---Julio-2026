@@ -32,6 +32,8 @@ adk web
 
 
 
+
+"google-adk==2.4.0"
 # =========== Despliegue sobre GCR ========
 adk deploy cloud_run \
 --project=datapath-kevin-inofuentecolque \

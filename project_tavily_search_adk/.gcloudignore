@@ -1,0 +1,17 @@
+# El ADK lee este archivo al copiar la carpeta del agente hacia la imagen.
+# Todo lo que esté aquí NO se hornea dentro del contenedor.
+
+# Secretos: en Cloud Run las claves llegan desde Secret Manager, nunca en la imagen.
+.env
+
+# Archivos de despliegue y documentación: no los necesita el contenedor.
+manifest.yml
+DEPLOY.md
+Preguntas_para_testar_agente.md
+.env.example
+
+# Basura local
+__pycache__
+*.pyc
+.adk
+.DS_Store
